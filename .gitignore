@@ -11,3 +11,7 @@ web-build/
 
 # macOS
 .DS_Store
+
+# secure
+.env
+/backend/visual-313719-64d783890829
