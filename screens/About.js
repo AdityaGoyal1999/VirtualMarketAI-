@@ -4,14 +4,14 @@ import React from 'react';
 import { Text, View, SafeAreaView, ScrollView, StyleSheet, Image } from 'react-native';
 import { Card, ListItem, Button, Icon } from 'react-native-elements';
 
-import AboutCard from '../../components/AboutCard';
+import AboutCard from '../components/AboutCard';
 
 function About() {
   return (
     <SafeAreaView>
       <ScrollView style={styles.container}>
         <Text style={styles.heading}>About Us</Text>
-        <Image source={require('../images/splash.png')} style={styles.image} />
+        <Image source={require('../assets/splash.png')} style={styles.image} />
         <AboutCard />
       </ScrollView>
     </SafeAreaView>
