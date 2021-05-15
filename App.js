@@ -6,9 +6,9 @@ import StoreView from './screens/StoreView';
 
 export default function App() {
   return (
-    // <LoginPage />
+    <LoginPage />
     // <Stores />
-    <StoreView />
+    // <StoreView />
   );
 }
 

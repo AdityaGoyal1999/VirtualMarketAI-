@@ -1,8 +1,11 @@
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Linking } from 'react-native';
+import { StyleSheet, Text, View, Image, Linking} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input, Button } from 'react-native-elements';
+import {Router, Route, Link, RouteHandler} from 'react-router';
+
+import Stores from './Stores';
 
 function LoginPage() {
     return (
@@ -36,10 +39,6 @@ function LoginPage() {
                     secureTextEntry={true}
                 />
 
-                <Button
-                    title="Login"
-                    style={styles.button}
-                />
                 <Button
                     title="SignUp"
                     type="outline"
