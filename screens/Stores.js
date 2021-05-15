@@ -6,17 +6,17 @@ import { Card, ListItem, Button, Icon } from 'react-native-elements';
 
 import SellerCard from '../components/SellerCard';
 
-function Stores() {
+function Stores({ navigation }) {
     return (
         <SafeAreaView>
             <ScrollView style={styles.container}>
                 <Text style={styles.heading}>Near You</Text>
 
-                <SellerCard name="Mark's Store"/>
-                <SellerCard name="Phil's Store"/>
-                <SellerCard name="John's Store"/>
-                <SellerCard name="Lary's Store"/>
-                <SellerCard name="Jane's Store"/>
+                <SellerCard name="Mark's Store" navigation={navigation}/>
+                <SellerCard name="Phil's Store" navigation={navigation}/>
+                <SellerCard name="John's Store" navigation={navigation}/>
+                <SellerCard name="Lary's Store" navigation={navigation}/>
+                <SellerCard name="Jane's Store" navigation={navigation}/>
 
             </ScrollView>
         </SafeAreaView>

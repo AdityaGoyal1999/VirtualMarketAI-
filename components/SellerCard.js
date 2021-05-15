@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, SafeAreaView, ScrollView, StyleSheet, Image } from 'react-native';
 import { Card, ListItem, Button, Icon } from 'react-native-elements'
 
-function SellerCard({ name }) {
+function SellerCard({ name, navigation }) {
     return (
         <Card>
             <Card.Title>{ name }</Card.Title>
@@ -13,6 +13,7 @@ function SellerCard({ name }) {
             </Text>
             <Button
             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
+            onPress= {() => navigation.navigate('StoreView')}
             title='CHECK IN' />
             
                     

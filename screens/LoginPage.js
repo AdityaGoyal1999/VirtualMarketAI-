@@ -5,9 +5,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { Input, Button } from 'react-native-elements';
 import {Router, Route, Link, RouteHandler} from 'react-router';
 
-import Stores from './Stores';
 
-function LoginPage() {
+function LoginPage({ navigation }) {
     return (
         <View>
             <Image 
@@ -39,6 +38,11 @@ function LoginPage() {
                     secureTextEntry={true}
                 />
 
+                <Button
+                    title="Login"
+                    style={styles.button}
+                    onPress={() => navigation.navigate('Stores')}
+                />
                 <Button
                     title="SignUp"
                     type="outline"
