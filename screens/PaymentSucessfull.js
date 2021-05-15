@@ -14,7 +14,7 @@ function PaymentSucessfull() {
     <View>
       <Image
         style={styles.image}
-        source={require('../images/load-check.gif')}></Image>
+        source={require('../assets/load-check.gif')}></Image>
       <Text style={styles.heading}>Payment Sucessfull</Text>
     </View>
   );
