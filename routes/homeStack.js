@@ -4,6 +4,7 @@ import { createAppContainer } from 'react-navigation';
 import LoginPage from '../screens/LoginPage';
 import Stores from '../screens/Stores';
 import StoreView from '../screens/StoreView';
+import Checkout from '../screens/Checkout';
 
 const screens = {
     LoginPage: {
@@ -14,6 +15,9 @@ const screens = {
     },
     StoreView:{
         screen: StoreView,
+    },
+    Checkout: {
+        screen: Checkout,
     }
 
 };

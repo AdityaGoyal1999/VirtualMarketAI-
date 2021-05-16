@@ -12,11 +12,11 @@ function Stores({ navigation }) {
             <ScrollView style={styles.container}>
                 <Text style={styles.heading}>Near You</Text>
 
-                <SellerCard name="Mark's Store" navigation={navigation}/>
-                <SellerCard name="Phil's Store" navigation={navigation}/>
-                <SellerCard name="John's Store" navigation={navigation}/>
-                <SellerCard name="Lary's Store" navigation={navigation}/>
-                <SellerCard name="Jane's Store" navigation={navigation}/>
+                <SellerCard name="Mark's Store" navigation={navigation} img='store.jpg'/>
+                <SellerCard name="Phil's Store" navigation={navigation} img='store.jpg'/>
+                <SellerCard name="John's Store" navigation={navigation} img='store.jpg'/>
+                <SellerCard name="Lary's Store" navigation={navigation} img='store.jpg'/>
+                <SellerCard name="Jane's Store" navigation={navigation} img='store.jpg'/>
 
             </ScrollView>
         </SafeAreaView>
