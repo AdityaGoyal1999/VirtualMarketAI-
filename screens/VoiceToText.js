@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import ImagePicker from "react-native-image-picker";
 // import Icon from '@material-ui/core/Icon';
 
-function Checkout({ navigation }) {
+function VoiceToText() {
 
     let handleChoosePhoto = () =>{
         const options = {};
@@ -14,7 +14,7 @@ function Checkout({ navigation }) {
         });
     };
 
-    const list = [
+    let list = [
         {
           name: 'Cabbage',
           avatar_url: 'https://images.pexels.com/photos/1070984/pexels-photo-1070984.jpeg?cs=srgb&dl=pexels-daria-shevtsova-1070984.jpg&fm=jpg',
@@ -63,28 +63,14 @@ function Checkout({ navigation }) {
                 </View>
             </ScrollView>
             <View style={styles.footer}>
-                <Text style={styles.addItemsText}>Add Items</Text>
-                <Button 
-                    style={styles.button}
-                    title="Take Photo">
-                </Button>
-                <Button
-                    title="From Gallery"
-                    type="outline"
-                    style={styles.button}
-                    onPress = {() => {
-                            const options = {};
-                            ImagePicker.launchImageLibrary(options, response => {
-                                console.log("response", response);
-                            });
-                    }}
-                />
-                <Button
-                    title="Pay"
-                    // type="outline"
-                    style={ styles.button }
-                    onPress = {() => navigation.navigate('PaymentSuccessful')}
-                />
+                <Text style={styles.addItemsText}>Speak the Items</Text>
+                <Text style={{ margin: 5, fontSize: 30,textAlign: "center" }}>
+                    <Icon
+                        name="microphone"
+                        size = {40}
+                        style={{margin: 10,}}
+                    ></Icon>
+            </Text>
             </View>
         </SafeAreaView>
     )
@@ -119,4 +105,4 @@ const styles = StyleSheet.create({
     },
 })
 
-export default Checkout
+export default VoiceToText;

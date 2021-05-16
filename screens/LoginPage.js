@@ -59,7 +59,8 @@ function LoginPage({ navigation }) {
                     title="Login"
                     style={styles.button}
                     onPress={() => {
-
+                        
+                        navigation.navigate('Stores');
                         // alert('email: ' + state.email + ' password: ' + state.password)
                         // 
 
@@ -70,26 +71,26 @@ function LoginPage({ navigation }) {
 
                         // alert('https://visual-market-service-ernmtrrhya-uc.a.run.app/login_owner?username='+ state.email +'&password=' + state.password)
 
-                        axios.get('https://visual-market-service-ernmtrrhya-uc.a.run.app/login_owner?username='+ state.email +'&password=' + state.password)
-                        .then((response) => {
+                        // axios.get('https://visual-market-service-ernmtrrhya-uc.a.run.app/login_owner?username='+ state.email +'&password=' + state.password)
+                        // .then((response) => {
                             
-                            console.log(response);
-                            if(response.status === 200){
-                                navigation.navigate('Stores');
-                            }
-                            else{
-                                alert('User or Password do not exist');
-                            }
+                        //     console.log(response);
+                        //     if(response.status === 200){
+                        //         navigation.navigate('Stores');
+                        //     }
+                        //     else{
+                        //         alert('User or Password do not exist');
+                        //     }
                             
-                        }, (error) => {
+                        // }, (error) => {
 
-                            console.log(error);
-                            alert('User or Password do not exist');
-                        });
+                        //     console.log(error);
+                        //     alert('User or Password do not exist');
+                        // });
 
                         
 
-                        // navigation.navigate('Stores')
+                        // // navigation.navigate('Stores')
                     }}
                 />
                 <Button

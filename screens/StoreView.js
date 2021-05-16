@@ -9,9 +9,9 @@ function StoreView({ navigation }) {
             <Text style={styles.heading }>Mark's Store</Text>
             <ScrollView>
 
-                <SellerCard name="20% Discount on Melons" img='melons.jpeg'/>
-                <SellerCard name="20% Discount on Melons" img='melons.jpeg'/>
-                <SellerCard name="20% Discount on Melons" img='melons.jpeg'/>
+                <SellerCard name="OFFERS" img='melons.jpeg' desc="20% Discount on Watermelons"/>
+                <SellerCard name="OFFERS" img='melons.jpeg' desc="10% Discount on Bananas"/>
+                <SellerCard name="OFFERS" img='melons.jpeg' desc="Buy one get one free on select products"/>
 
             </ScrollView>
             <View style={styles.footer}>
@@ -19,6 +19,7 @@ function StoreView({ navigation }) {
                     title="Video Call with Attendent"
                     // type="outline"
                     style={styles.button}
+                    onPress = {() => navigation.navigate('VideoCall')}
                 />
                 <Button
                     title="Checkout Items"
@@ -30,6 +31,7 @@ function StoreView({ navigation }) {
                     title="Voice to Text for Items"
                     // type="outline"
                     style={ styles.button }
+                    onPress = {() => navigation.navigate('VoiceToText')}
                 />
             </View>
         </SafeAreaView>

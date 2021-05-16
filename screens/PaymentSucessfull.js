@@ -11,29 +11,23 @@ import { Card, ListItem, Button, Icon } from 'react-native-elements';
 
 function PaymentSucessfull() {
   return (
-    <View>
+    <View style={styles.container}>
       <Image
-        style={styles.image}
         source={require('../assets/load-check.gif')}></Image>
-      <Text style={styles.heading}>Payment Sucessfull</Text>
+      <Text style={styles.heading}>Sucessfull</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  image: {
-    top: 160,
-    left: 70,
+  container:{
+    backgroundColor: "white",
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
   },
-
-  heading: {
+  heading:{
     fontSize: 50,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textAlign: 'justify',
-    marginLeft: 60,
-    marginTop: 140,
   },
 });
 

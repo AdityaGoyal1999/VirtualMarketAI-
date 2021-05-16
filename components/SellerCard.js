@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, SafeAreaView, ScrollView, StyleSheet, Image } from 'react-native';
 import { Card, ListItem, Button, Icon } from 'react-native-elements'
 
-function SellerCard({ name, navigation, img }) {
+function SellerCard({ name, navigation, img, desc }) {
 
     const imageURL = `../assets/melons.jpeg`;
 
@@ -15,7 +15,7 @@ function SellerCard({ name, navigation, img }) {
                 >
             </Card.Image>
             <Text style={styles.cardText}>
-                The idea with React Native Elements is more about component structure than actual design.
+                {desc}
             </Text>
             <Button
             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}

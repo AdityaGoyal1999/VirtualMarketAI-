@@ -5,6 +5,9 @@ import LoginPage from '../screens/LoginPage';
 import Stores from '../screens/Stores';
 import StoreView from '../screens/StoreView';
 import Checkout from '../screens/Checkout';
+import VideoCall from '../screens/VideoCall';
+import VoiceToText from '../screens/VoiceToText';
+import PaymentSuccessful from '../screens/PaymentSucessfull';
 
 const screens = {
     LoginPage: {
@@ -18,6 +21,15 @@ const screens = {
     },
     Checkout: {
         screen: Checkout,
+    },
+    VideoCall: {
+        screen: VideoCall,
+    },
+    VoiceToText: {
+        screen: VoiceToText,
+    },
+    PaymentSuccessful:{
+        screen: PaymentSuccessful,
     }
 
 };
